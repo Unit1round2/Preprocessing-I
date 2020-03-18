@@ -1,1 +1,354 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Sen', sans-serif;
+  font-size: 1.5rem;
+  background-color: #F5F5F5;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Sen Regular'), local('Sen-Regular'), url(https://fonts.gstatic.com/s/sen/v1/6xKjdSxYI9_3nPWI.ttf) format('truetype');
+}
+html {
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+}
+header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  header {
+    justify-content: center;
+  }
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  padding: 2% 2% 0 0;
+  margin-right: 3%;
+}
+@media (max-width: 500px) {
+  header nav {
+    justify-content: space-evenly;
+    width: 80%;
+  }
+}
+header nav a {
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.maincontent {
+  width: 90%;
+  height: 83vh;
+  background-color: #D3D3D3;
+  margin: 0 5% 0 5%;
+}
+@media (max-width: 500px) {
+  .maincontent {
+    height: 55vh;
+  }
+}
+.maincontent img {
+  width: 15%;
+  border-radius: 10%;
+  margin: 2% 0 0% 2%;
+  padding-bottom: 2%;
+}
+.maincontent h1 {
+  font-size: 5rem;
+  padding: 2% 2% 0 2%;
+}
+@media (max-width: 500px) {
+  .maincontent h1 {
+    font-size: 3rem;
+  }
+}
+.maincontent h2 {
+  margin: 2% 0 2% 2%;
+  border-bottom: 1px solid black;
+  padding-bottom: 3%;
+}
+.maincontent p {
+  margin: 2% 0 0% 2%;
+}
+@media (max-width: 500px) {
+  .maincontent p {
+    line-height: 1.5;
+  }
+}
+.maincontent button {
+  margin: 2% 0 0% 2%;
+  background-color: #778899;
+  padding: 1%;
+  font-size: 1.8rem;
+  color: white;
+}
+.middlecontent {
+  margin: 2% 0 0% 4%;
+  width: 90%;
+  display: flex;
+}
+@media (max-width: 500px) {
+  .middlecontent {
+    flex-direction: column;
+    padding: 3% 0 3% 0;
+  }
+}
+.middlecontent .left {
+  margin-left: 1%;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .middlecontent .left {
+    width: 100%;
+    padding-bottom: 2%;
+  }
+}
+.middlecontent .left h2 {
+  font-size: 3rem;
+  padding: 1%;
+}
+.middlecontent .left p {
+  line-height: 1.5;
+  padding: 1%;
+}
+.middlecontent .right {
+  width: 50%;
+  padding-left: 5%;
+}
+@media (max-width: 500px) {
+  .middlecontent .right {
+    width: 100%;
+    padding-left: 0%;
+  }
+}
+.middlecontent .right h2 {
+  font-size: 3rem;
+  padding: 1%;
+}
+.middlecontent .right li {
+  padding: 2%;
+  border: 1px solid grey;
+}
+.workhistory {
+  width: 95%;
+}
+.workhistory h1 {
+  margin: 2% 0 0% 5%;
+  font-size: 3rem;
+}
+.workhistory .one {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0 0% 6%;
+  padding: 1%;
+  border-top: 2px solid grey;
+}
+.workhistory .two {
+  display: flex;
+  justify-content: space-between;
+  margin: 0% 0 0% 6%;
+  padding: 1%;
+  background-color: #D3D3D3;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}
+.workhistory .three {
+  display: flex;
+  justify-content: space-between;
+  margin: 0% 0 0% 6%;
+  padding: 1%;
+}
+.workhistory .four {
+  display: flex;
+  justify-content: space-between;
+  margin: 0% 0 3% 6%;
+  padding: 1%;
+  background-color: #D3D3D3;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact h2 {
+  margin: 2% 0 0% 5%;
+  font-size: 3rem;
+}
+.contact ul {
+  margin: 2% 0 0% 2%;
+  font-size: 1.7rem;
+}
+.contact ul li {
+  padding-bottom: 5%;
+}
+footer {
+  width: 90%;
+  height: 10vh;
+  margin-left: 5%;
+  background-color: #696969;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  align-items: center;
+  color: white;
+}
