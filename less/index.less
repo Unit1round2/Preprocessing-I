@@ -68,6 +68,15 @@ html, body {
 @heading-font: 'Roboto', sans-serif;
 @body-font: 'Sen', sans-serif;
 
+// mixins
+.bordered(){
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;
+}
+.borderbtm(){
+	border-bottom: 2px solid grey;
+}
+
 //General Styles
 html{
 	font-size: 62.5%;;
@@ -108,7 +117,7 @@ header{
 
 .maincontent{
 	width:90%;
-	height: 83vh;
+	height: 90vh;
 	background-color: #D3D3D3;
 	margin: 0 5% 0 5%;
 	@media(max-width: 500px){
@@ -185,7 +194,7 @@ header{
 		}
 		li{
 			padding: 2%;
-			border: 1px solid grey;
+			
 
 		}
 	}
@@ -202,7 +211,7 @@ header{
 		justify-content: space-between;
 		margin: 2% 0 0% 6%;
 		padding:1%;
-		border-top:2px solid grey;
+		.bordered();
 	}
 	.two{
 		display: flex;
@@ -210,14 +219,15 @@ header{
 		margin: 0% 0 0% 6%;
 		padding:1%;
 		background-color: #D3D3D3;
-		border-top:2px solid grey;
-		border-bottom:2px solid grey;
+		.borderbtm();
+		
 	}
 	.three{
 		display: flex;
 		justify-content: space-between;
 		margin: 0% 0 0% 6%;
 		padding:1%;
+		.borderbtm()
 		
 		
 	}
@@ -227,16 +237,56 @@ header{
 		margin: 0% 0 3% 6%;
 		padding:1%;
 		background-color: #D3D3D3;
-		border-top:2px solid grey;
-		border-bottom:2px solid grey;
+		.borderbtm()
 		
+		
+	}
+}
+.form{
+	width: 40%;
+	height: 50vh;
+	margin-left: 6%;
+	background-color: #D3D3D3;
+	.bordered();
+	@media(max-width: 500px){
+		height: 40vh;
+	}
+	
+	
+	h2{
+		margin: 2% 0 0% 0%;
+		font-size: 3rem;
+		padding-bottom: 3%;
+		margin-left:3%;
+
+	}
+	label{
+		font-size: 2rem;
+		padding-bottom: 3%;
+		margin-left:3%;
+	}
+	input{
+		width: 80%;
+		padding-bottom: 3%;
+		margin-left:3%;
+	}
+	button{ 
+		margin: 4% 0% 0% 5%;
+		background-color:#778899;
+		padding: 2%;
+		font-size: 1.8rem;
+		color:white;
+
 	}
 }
 .contact{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	margin-left: 1%;
+	
+	
+	
 	h2{
 		margin: 2% 0 0% 5%;
 		font-size: 3rem;
@@ -245,10 +295,13 @@ header{
 		margin: 2% 0 0% 2%;
 		font-size:1.7rem;
 		li{
-			padding-bottom: 5%;
+			margin: 0% 0 0% 4%;
+			padding-bottom: 2%;
 		}
 	}
 }
+
+
 footer{
 	width:90%;
 	height: 10vh;

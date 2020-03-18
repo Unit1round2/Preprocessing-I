@@ -193,7 +193,7 @@ header nav a {
 }
 .maincontent {
   width: 90%;
-  height: 83vh;
+  height: 90vh;
   background-color: #D3D3D3;
   margin: 0 5% 0 5%;
 }
@@ -282,7 +282,6 @@ header nav a {
 }
 .middlecontent .right li {
   padding: 2%;
-  border: 1px solid grey;
 }
 .workhistory {
   width: 95%;
@@ -297,6 +296,7 @@ header nav a {
   margin: 2% 0 0% 6%;
   padding: 1%;
   border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
 }
 .workhistory .two {
   display: flex;
@@ -304,7 +304,6 @@ header nav a {
   margin: 0% 0 0% 6%;
   padding: 1%;
   background-color: #D3D3D3;
-  border-top: 2px solid grey;
   border-bottom: 2px solid grey;
 }
 .workhistory .three {
@@ -312,6 +311,7 @@ header nav a {
   justify-content: space-between;
   margin: 0% 0 0% 6%;
   padding: 1%;
+  border-bottom: 2px solid grey;
 }
 .workhistory .four {
   display: flex;
@@ -319,14 +319,49 @@ header nav a {
   margin: 0% 0 3% 6%;
   padding: 1%;
   background-color: #D3D3D3;
+  border-bottom: 2px solid grey;
+}
+.form {
+  width: 40%;
+  height: 50vh;
+  margin-left: 6%;
+  background-color: #D3D3D3;
   border-top: 2px solid grey;
   border-bottom: 2px solid grey;
+}
+@media (max-width: 500px) {
+  .form {
+    height: 40vh;
+  }
+}
+.form h2 {
+  margin: 2% 0 0% 0%;
+  font-size: 3rem;
+  padding-bottom: 3%;
+  margin-left: 3%;
+}
+.form label {
+  font-size: 2rem;
+  padding-bottom: 3%;
+  margin-left: 3%;
+}
+.form input {
+  width: 80%;
+  padding-bottom: 3%;
+  margin-left: 3%;
+}
+.form button {
+  margin: 4% 0% 0% 5%;
+  background-color: #778899;
+  padding: 2%;
+  font-size: 1.8rem;
+  color: white;
 }
 .contact {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-left: 1%;
 }
 .contact h2 {
   margin: 2% 0 0% 5%;
@@ -337,7 +372,8 @@ header nav a {
   font-size: 1.7rem;
 }
 .contact ul li {
-  padding-bottom: 5%;
+  margin: 0% 0 0% 4%;
+  padding-bottom: 2%;
 }
 footer {
   width: 90%;
